@@ -1,4 +1,4 @@
-# chromex-sample
+# org.confluxnetwork
 
 ### An example extension using Chromex library and shadow-cljs
 
@@ -6,7 +6,7 @@ This project acts as a code example for [chromex library](https://github.com/bin
 with project configuration based on shadow-cljs and deps.edn following best practices. We recommend using it as a starting 
 point when starting development of your own extension.
 
-#### **chromex-sample** has a minimalist **background page**, **popup button** and **content script**:
+#### **org.confluxnetwork** has a minimalist **background page**, **popup button** and **content script**:
 
   * background page listens for connections from popup buttons and content scripts (there can be multiple of them)
   * popup button connects to the background page and sends a simple "HELLO" message after connection
@@ -15,7 +15,7 @@ point when starting development of your own extension.
   the background page
   * background page listens to tab creation events and notifies all connected clients about new tabs
 
-#### **chromex-sample** project has following configuration:
+#### **org.confluxnetwork** project has following configuration:
 
   * uses [shadow-cljs](http://shadow-cljs.org)
   * integrates [cljs-devtools](https://github.com/binaryage/cljs-devtools) 
@@ -113,14 +113,14 @@ shadow-cljs - starting via "clojure"
 ./scripts/package.sh
 ```
 
-This will produce a new zip file in `releases` folder named `chromex-sample-$VERSION.zip` 
+This will produce a new zip file in `releases` folder named `org.confluxnetwork-$VERSION.zip` 
 and `VERSION` is taken from [package.json](package.json).
 
 The output should look like:
 
 ```text
 > ./scripts/package.sh
-Archive:  releases/chromex-sample-1.0.0.zip
+Archive:  releases/org.confluxnetwork-1.0.0.zip
   Length      Date    Time    Name
 ---------  ---------- -----   ----
         0  02-11-2020 12:27   out/
@@ -140,7 +140,7 @@ Archive:  releases/chromex-sample-1.0.0.zip
 ---------                     -------
    217117                     14 files
 
-'releases/chromex-sample-1.0.0.zip' is ready for upload
+'releases/org.confluxnetwork-1.0.0.zip' is ready for upload
 => https://chrome.google.com/webstore/developer/dashboard
 ```
 
@@ -184,12 +184,12 @@ The main section is:
 
              ; Describes the 3 compiled outputs, their entry points and any options
              :outputs          {:background     {:output-type :chrome/background
-                                                 :entries     [chromex-sample.background]}
+                                                 :entries     [org.confluxnetwork.background]}
                                 :content-script {:output-type    :chrome/content-script
                                                  :chrome/options {:matches ["<all_urls>"]
                                                                   :run-at  "document_end"}
-                                                 :entries        [chromex-sample.content-script]}
-                                :popup          {:entries [chromex-sample.popup]}}}}
+                                                 :entries        [org.confluxnetwork.content-script]}
+                                :popup          {:entries [org.confluxnetwork.popup]}}}}
 ```
 
 The three outputs (`:background`, `:content-script` and `:popup`) are the 3

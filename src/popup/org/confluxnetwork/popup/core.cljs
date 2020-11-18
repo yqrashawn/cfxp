@@ -1,4 +1,4 @@
-(ns chromex-sample.popup.core
+(ns org.confluxnetwork.popup.core
   (:require [cljs.core.async :refer [go-loop <!]]
             [chromex.logging :refer-macros [log info warn error group group-end]]
             [chromex.protocols.chrome-port :refer [post-message!]]

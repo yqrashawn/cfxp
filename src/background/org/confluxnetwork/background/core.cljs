@@ -1,4 +1,4 @@
-(ns chromex-sample.background.core
+(ns org.confluxnetwork.background.core
   (:require [goog.string :as gstring]
             [goog.string.format]
             [cljs.core.async :refer [go-loop <! chan]]
@@ -7,7 +7,7 @@
             [chromex.protocols.chrome-port :refer [post-message! get-sender]]
             [chromex.ext.tabs :as tabs]
             [chromex.ext.runtime :as runtime]
-            [chromex-sample.background.storage :refer [test-storage!]]))
+            [org.confluxnetwork.background.storage :refer [test-storage!]]))
 
 (def clients (atom []))
 

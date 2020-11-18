@@ -10,10 +10,10 @@
                               ; files via chrome-extension://<extension-id>/out/cljs-runtime/goog.debug.error.js.map urls
                               :source-map-inline      true}
            :outputs          {:background     {:output-type :chrome/background
-                                               :entries     [chromex-sample.background]}
+                                               :entries     [org.confluxnetwork.background]}
                               :content-script {:output-type    :chrome/content-script
                                                :chrome/options {:matches ["<all_urls>"]
                                                                 :run-at  "document_end"}
-                                               :entries        [chromex-sample.content-script]}
+                                               :entries        [org.confluxnetwork.content-script]}
                               :popup          {:output-type :chrome/shared
-                                               :entries     [chromex-sample.popup]}}}}}
+                                               :entries     [org.confluxnetwork.popup]}}}}}

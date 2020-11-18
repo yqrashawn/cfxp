@@ -1,4 +1,4 @@
-(ns chromex-sample.background.storage
+(ns org.confluxnetwork.background.storage
   (:require [cljs.core.async :refer [go <! chan]]
             [chromex.logging :refer-macros [log info warn error group group-end]]
             [chromex.protocols.chrome-storage-area :refer [get set]]

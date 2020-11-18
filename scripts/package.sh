@@ -19,7 +19,7 @@ fi
 VERSION_WITH_QUOTES=$(grep "version" <package.json | cut -d' ' -f4)
 VERSION=${VERSION_WITH_QUOTES//[\",]/}
 
-PACKAGE_NAME="$RELEASES_DIR/chromex-sample-$VERSION"
+PACKAGE_NAME="$RELEASES_DIR/org.confluxnetwork-$VERSION"
 ZIP_NAME="$PACKAGE_NAME.zip"
 
 if [[ -f "$ZIP_NAME" ]]; then

@@ -4,7 +4,7 @@
  :manifest-version 2
 
  :permissions      ["activeTab"
-                    ; storage permission is needed for chromex-sample.background.storage/test-storage!
+                    ; storage permission is needed for org.confluxnetwork.background.storage/test-storage!
                     "storage"
                     "http://*/*"
                     "https://*/*"]

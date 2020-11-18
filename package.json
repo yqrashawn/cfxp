@@ -1,5 +1,5 @@
 {
-  "name": "chromex-sample-shadow",
+  "name": "org.confluxnetwork-shadow",
   "version": "1.0.0",
   "description": "chromex example working with shadow-cljs",
   "main": "index.js",
