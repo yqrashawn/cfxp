@@ -4,11 +4,16 @@
   "description": "chromex example working with shadow-cljs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "node-sass --omit-source-map-url resources/sass/main.scss resources/unpacked/css/main.css",
+    "w:css": "yarn run css-build -- --watch",
+    "dev:cljs": "shadow-cljs watch :extension"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "bulma": "^0.9.1",
+    "node-sass": "^5.0.0",
     "shadow-cljs": "2.8.86"
   },
   "dependencies": {

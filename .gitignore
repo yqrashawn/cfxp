@@ -17,3 +17,4 @@ package-lock.json
 resources/unpacked/out
 resources/unpacked/manifest.json
 .cpcache
+/resources/unpacked/css/
